@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center">Angular Form</h1>
+            <br/>
+            <br/>
+
+            
+
+            <form #basicform="ngForm" (ngSubmit)="formData(basicform.value)">
+                <table style="margin:auto;border:2px solid black">
+                    <tr>
+                        <td><input type="text" ngModel name="user" placeholder="Name"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" ngModel name="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" ngModel name="password" placeholder="password"></td>
+                    </tr>
+                    <tr>
+                        <td><button>Register</button></td>
+                    </tr>
+                
+                </table>
+            
+                
+            </form>
+
+            <br/>
+            
+            <div class="" style="text-align: center;">
+                <p>Name: {{userdata.user}}</p>
+                <p>Email: {{userdata.email}}</p>
+                
+            </div>
+
+            
+        </div>
+    </div>
+</div>
